@@ -7,17 +7,6 @@
 # It is available under the Python licence.
 
 from setuptools import setup
-import os.path
-import sys
-
-
-if ("build" in sys.argv) or ("install" in sys.argv):
-    HERE = os.path.dirname(sys.argv[0]) or "."
-
-    for filename in os.listdir(HERE):
-        filename = os.path.join(HERE, filename)
-        if filename.endswith(".py%s" % sys.version[0]):
-            open(filename[:-1], "w").write(open(filename).read())
 
 
 setup(
@@ -42,6 +31,6 @@ and it can be extended to support C-defined type.""",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 
-    package_dir={"cerealizer": ""},
     packages=["cerealizer"],
+    include_package_data=True,
 )

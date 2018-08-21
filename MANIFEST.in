@@ -1,4 +1,3 @@
-
 include test/*.py
-include *.py2
-include *.py3
+include cerealizer/*.py2
+include cerealizer/*.py3
