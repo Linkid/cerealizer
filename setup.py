@@ -6,21 +6,22 @@
 # This program is free software.
 # It is available under the Python licence.
 
-import sys, os.path, distutils.core
+from setuptools import setup
+import sys, os.path
 
 
 if ("build" in sys.argv) or ("install" in sys.argv) :
   HERE = os.path.dirname(sys.argv[0]) or "."
-  
+
   for filename in os.listdir(HERE):
     filename = os.path.join(HERE, filename)
     if filename.endswith(".py%s" % sys.version[0]):
       open(filename[:-1], "w").write(open(filename).read())
-      
 
 
 
-distutils.core.setup(name         = "Cerealizer",
+
+setup(               name         = "Cerealizer",
                      version      = "0.8.1",
                      license      = "Python licence",
                      description  = "A secure pickle-like module",
@@ -40,7 +41,7 @@ and it can be extended to support C-defined type.""",
                        "Topic :: Security",
                        "Topic :: Software Development :: Libraries :: Python Modules",
                        ],
-                     
+
                      package_dir  = {"cerealizer" : ""},
                      packages     = ["cerealizer"],
                      )
