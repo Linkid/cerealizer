@@ -20,7 +20,7 @@ old and new-style classes (you need to register the class for security), object 
 and it can be extended to support C-defined type.""",
     author="Lamy Jean-Baptiste (Jiba)",
     author_email="jibalamy@free.fr",
-    url="http://home.gna.org/oomadness/en/cerealizer/index.html",
+    url="http://www.lesfleursdunormal.fr/static/informatique/cerealizer/index_en.html",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
