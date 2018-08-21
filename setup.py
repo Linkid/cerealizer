@@ -11,7 +11,7 @@ from setuptools import setup
 
 setup(
     name="Cerealizer",
-    version="0.8.1",
+    version="0.9.0",
     license="Python licence",
     description="A secure pickle-like module",
     long_description="""A secure pickle-like module.
